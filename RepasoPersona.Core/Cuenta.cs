@@ -2,13 +2,15 @@ namespace RepasoPersona.Core;
 
 public class Cuenta
 {
-    public double Saldo{get; private set;}
-    public double Monto {get; private set; }
+    private static int _contador = 0;
     public int CBU {get; private set;}
+    public Cuenta()
     {
-        Saldo = saldo;
-        Monto = monto;
-        CBU = cbu;
+        CBU = ++_contador;
     }
 
+    public void Debitar(double monto)
+    {
+
+    }
 }

@@ -2,10 +2,11 @@ namespace RepasoPersona.Core;
 
 public class Cliente
 {
-    public double Saldo{get; private set;}
-    public string Cuenta {get; private set;}
+    public double Efectivo {get; private set;}
+
+    public Cliente(double efectivo)
     {
-        Saldo = saldo;
+        Efectivo = efectivo;
     }
 
     public void AgregarCuenta(double saldo)

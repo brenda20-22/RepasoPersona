@@ -2,6 +2,14 @@ namespace RepasoPersona.Core;
 
 public class Dinero
 {
-    public string Cliente {get; private set;}
-    
+    private protected double Monto { get; private set; }
+
+    public Dinero(double monto)
+    {
+        Monto = monto;
+    }
+    public void Debitar(double monto)
+    {
+        
+    }
 }
